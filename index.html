@@ -39,11 +39,46 @@
 
     <section id="projetos">
         <h2>Projetos</h2>
+
         <article>
             <h3>Portifólio</h3>
             <p>Este foi o primeiro site que desenvolvi, estudando Front-end.</p>
         </article>
     </section>
+
+    <section id="habilidades">
+        <h2>Habilidades e Tecnologia</h2>
+        <table>
+            <thead> <!-- cabeça da coluna, INDICE-->
+                <tr> <!-- nova linha-->
+                    <th>Tecnologia</th>
+                    <th>nível</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td> Iniciante</td>
+                    <td>Capaz de construir estruturas de páginas web semântica e responsivas</td>
+                </tr>
+
+                <tr>
+                    <td> CSS</td>
+                    <td>Aprendiz</td>
+                    <td>Experiência com flexbox, grid e animações CSS</td>
+                </tr>
+
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Básico</td>
+                    <td>Desenvolvimento de scripts do lado do cliente para interações</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
 
     <footer>
         <p>Direitos reservado para Solano</p>
@@ -51,10 +86,33 @@
             <h2>Contato</h2>
             <p>Tem um projeto em mente? Entre em contato!</p>
 
-            <address>
-                E-mail: <a href="mailto:alberto@solano.com">soalno@exemplo.com </a> <br>
-                Telefone: <a href="tel:+5511974570872"> 11 99999-9999</a>
-            </address>
+            <form action="">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> <br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required> <br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="orçamento">Orçamento</option>
+                    <option value="dúvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select> <br>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5"></textarea> <br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja minha newslatter? Fique por dentro!</label> <br>
+
+                <input type="submit" value="Enviar mensagem"> <br>
+
+            </form>
         </section>
     </footer>
 
